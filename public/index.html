@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kornelia & Cameron — 23 October 2026</title>
+  <meta name="description" content="Wedding celebration of Kornelia and Cameron — 23rd October 2026, Wyresdale Park, Preston">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-cream: #FAF7F2;
+      --color-warm-white: #FFFDF9;
+      --color-sage: #8B9A7E;
+      --color-sage-light: #A8B89C;
+      --color-sage-dark: #6B7A5E;
+      --color-forest: #3D4F35;
+      --color-copper: #B87333;
+      --color-copper-light: #D4956A;
+      --color-gold: #C9A96E;
+      --color-burgundy: #722F37;
+      --color-charcoal: #2C2C2C;
+      --color-text: #3A3A3A;
+      --color-text-light: #6B6B6B;
+      --color-divider: #E0D8CC;
+      --font-display: 'Cormorant Garamond', 'Georgia', serif;
+      --font-heading: 'Playfair Display', 'Georgia', serif;
+      --font-body: 'Inter', -apple-system, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--color-text);
+      background: var(--color-cream);
+      line-height: 1.7;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ====== NAV ====== */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      transition: all 0.4s ease;
+      background: transparent;
+    }
+    nav.scrolled {
+      background: rgba(250, 247, 242, 0.95);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 1px 0 var(--color-divider);
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      font-weight: 400;
+      transition: opacity 0.3s;
+      opacity: 0.85;
+    }
+    nav a:hover { opacity: 1; }
+    nav.scrolled a { color: var(--color-text); }
+
+    /* ====== HERO ====== */
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: url('https://uploads.sayi.do/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oUis54R.avif') center/cover no-repeat;
+      transform: scale(1.05);
+      transition: transform 0.5s;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(0,0,0,0.15) 0%,
+        rgba(0,0,0,0.25) 40%,
+        rgba(0,0,0,0.5) 100%
+      );
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      color: white;
+      padding: 2rem;
+    }
+    .hero-names {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 8vw, 7rem);
+      font-weight: 300;
+      letter-spacing: 0.02em;
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+    }
+    .hero-ampersand {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-weight: 300;
+      display: block;
+      font-size: 0.5em;
+      opacity: 0.8;
+      margin: 0.1em 0;
+    }
+    .hero-date {
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      font-weight: 300;
+      opacity: 0.9;
+      margin-top: 1.5rem;
+    }
+    .hero-scroll {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      color: white;
+      opacity: 0.6;
+      animation: bounce 2s infinite;
+      text-decoration: none;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(8px); }
+    }
+
+    /* ====== SECTIONS ====== */
+    section {
+      padding: 6rem 2rem;
+    }
+    .section-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 0.5rem;
+      color: var(--color-forest);
+    }
+    .section-subtitle {
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      text-align: center;
+      color: var(--color-text-light);
+      margin-bottom: 3rem;
+    }
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: var(--color-copper);
+      margin: 1.5rem auto 3rem;
+    }
+
+    /* ====== LOVE STORY ====== */
+    .love-story {
+      background: var(--color-warm-white);
+    }
+    .story-text {
+      font-size: 1.05rem;
+      line-height: 1.9;
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 3rem;
+      color: var(--color-text);
+    }
+    .story-text-pl {
+      font-size: 0.92rem;
+      line-height: 1.8;
+      text-align: center;
+      max-width: 650px;
+      margin: 0 auto 3rem;
+      color: var(--color-text-light);
+      font-style: italic;
+    }
+
+    /* Photo Gallery */
+    .photo-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      max-width: 800px;
+      margin: 3rem auto 0;
+    }
+    .photo-gallery-item {
+      aspect-ratio: 1;
+      overflow: hidden;
+      border-radius: 4px;
+    }
+    .photo-gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .photo-gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    /* ====== COUNTDOWN ====== */
+    .countdown-section {
+      background: var(--color-forest);
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .countdown-section .section-title {
+      color: white;
+    }
+    .countdown {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      margin-top: 2rem;
+    }
+    .countdown-unit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .countdown-number {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 300;
+      line-height: 1;
+    }
+    .countdown-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      opacity: 0.7;
+      margin-top: 0.5rem;
+    }
+
+    /* ====== SCHEDULE / TIMELINE ====== */
+    .schedule {
+      background: var(--color-cream);
+    }
+    .timeline {
+      position: relative;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: var(--color-divider);
+      transform: translateX(-50%);
+    }
+    .timeline-day {
+      text-align: center;
+      margin: 3rem 0 2rem;
+      position: relative;
+    }
+    .timeline-day:first-child {
+      margin-top: 0;
+    }
+    .timeline-day-label {
+      display: inline-block;
+      background: var(--color-cream);
+      padding: 0.5rem 1.5rem;
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--color-forest);
+      position: relative;
+      z-index: 2;
+    }
+    .timeline-event {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 2rem;
+      align-items: start;
+      margin-bottom: 2.5rem;
+      position: relative;
+    }
+    .timeline-time {
+      text-align: right;
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--color-copper);
+      padding-top: 0.2rem;
+    }
+    .timeline-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--color-copper);
+      border: 3px solid var(--color-cream);
+      box-shadow: 0 0 0 1px var(--color-copper);
+      position: relative;
+      z-index: 2;
+      margin-top: 0.5rem;
+    }
+    .timeline-details {
+      text-align: left;
+    }
+    .timeline-event-title {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--color-charcoal);
+      margin-bottom: 0.25rem;
+    }
+    .timeline-event-title-pl {
+      font-size: 0.85rem;
+      color: var(--color-text-light);
+      font-style: italic;
+      margin-bottom: 0.5rem;
+    }
+    .timeline-event-desc {
+      font-size: 0.85rem;
+      color: var(--color-text-light);
+      margin-bottom: 0.3rem;
+    }
+    .timeline-venue {
+      font-size: 0.82rem;
+      color: var(--color-sage-dark);
+      font-weight: 400;
+    }
+    .timeline-address {
+      font-size: 0.78rem;
+      color: var(--color-text-light);
+    }
+    .timeline-directions {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-copper);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.3s;
+    }
+    .timeline-directions:hover {
+      border-bottom-color: var(--color-copper);
+    }
+
+    /* ====== WEDDING PARTY ====== */
+    .wedding-party {
+      background: var(--color-warm-white);
+    }
+    .party-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 2.5rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .party-member {
+      text-align: center;
+    }
+    .party-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 1rem;
+      display: block;
+      border: 3px solid var(--color-cream);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .party-member:hover .party-photo {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    }
+    .party-name {
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--color-charcoal);
+      margin-bottom: 0.3rem;
+    }
+    .party-role {
+      font-size: 0.78rem;
+      color: var(--color-text-light);
+      line-height: 1.5;
+    }
+    .party-role-pl {
+      font-size: 0.72rem;
+      color: var(--color-sage);
+      font-style: italic;
+      margin-top: 0.2rem;
+    }
+
+    /* ====== DRESS CODE ====== */
+    .dress-code {
+      background: var(--color-cream);
+      text-align: center;
+    }
+    .dress-code-text {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+    .dress-code-text-pl {
+      max-width: 600px;
+      margin: 1rem auto 0;
+      font-size: 0.88rem;
+      line-height: 1.8;
+      color: var(--color-text-light);
+      font-style: italic;
+    }
+    .dress-icons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+      font-size: 2rem;
+      opacity: 0.6;
+    }
+
+    /* ====== FAQ ====== */
+    .faq {
+      background: var(--color-warm-white);
+    }
+    .faq-grid {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      border-bottom: 1px solid var(--color-divider);
+      padding: 1.5rem 0;
+    }
+    .faq-question {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--color-charcoal);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+    .faq-question::after {
+      content: '+';
+      font-family: var(--font-body);
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: var(--color-copper);
+      transition: transform 0.3s;
+      flex-shrink: 0;
+    }
+    .faq-item.open .faq-question::after {
+      transform: rotate(45deg);
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+    }
+    .faq-item.open .faq-answer {
+      max-height: 500px;
+      padding-top: 1rem;
+    }
+    .faq-answer p {
+      font-size: 0.9rem;
+      line-height: 1.7;
+      color: var(--color-text-light);
+    }
+    .faq-answer p + p {
+      margin-top: 0.75rem;
+      font-style: italic;
+      font-size: 0.85rem;
+    }
+
+    /* ====== ACCOMMODATION ====== */
+    .accommodation {
+      background: var(--color-cream);
+      text-align: center;
+    }
+    .accommodation-text {
+      max-width: 650px;
+      margin: 0 auto;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+    .accommodation-text-pl {
+      max-width: 600px;
+      margin: 1rem auto 0;
+      font-size: 0.88rem;
+      line-height: 1.8;
+      color: var(--color-text-light);
+      font-style: italic;
+    }
+
+    /* ====== PHOTO SHARE ====== */
+    .photo-share {
+      background: var(--color-forest);
+      color: white;
+      text-align: center;
+    }
+    .photo-share .section-title {
+      color: white;
+    }
+    .photo-share-text {
+      max-width: 650px;
+      margin: 0 auto;
+      font-size: 0.95rem;
+      line-height: 1.8;
+      opacity: 0.9;
+    }
+    .photo-share-text-pl {
+      max-width: 600px;
+      margin: 1.5rem auto 0;
+      font-size: 0.85rem;
+      line-height: 1.8;
+      opacity: 0.7;
+      font-style: italic;
+    }
+
+    /* ====== RSVP ====== */
+    .rsvp-section {
+      background: var(--color-cream);
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+    .rsvp-note {
+      font-size: 0.9rem;
+      color: var(--color-text-light);
+      margin-bottom: 2rem;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .rsvp-note-pl {
+      font-size: 0.82rem;
+      color: var(--color-text-light);
+      font-style: italic;
+      margin-top: 0.5rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 1rem 3rem;
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 400;
+      text-decoration: none;
+      border: 1.5px solid var(--color-copper);
+      color: var(--color-copper);
+      background: transparent;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: var(--color-copper);
+      color: white;
+    }
+    .btn-solid {
+      background: var(--color-copper);
+      color: white;
+    }
+    .btn-solid:hover {
+      background: var(--color-copper-light);
+      border-color: var(--color-copper-light);
+    }
+
+    /* ====== FOOTER ====== */
+    footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      background: var(--color-charcoal);
+      color: rgba(255,255,255,0.5);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+    }
+    footer .names {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 0.5rem;
+    }
+
+    /* ====== SCROLL ANIMATIONS ====== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ====== RESPONSIVE ====== */
+    @media (max-width: 768px) {
+      nav {
+        gap: 1rem;
+        padding: 0.8rem 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      nav a { font-size: 0.65rem; }
+      section { padding: 4rem 1.5rem; }
+      .photo-gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4px;
+      }
+      .timeline::before { left: 20px; }
+      .timeline-event {
+        grid-template-columns: auto 1fr;
+        gap: 1rem;
+      }
+      .timeline-time {
+        text-align: left;
+        font-size: 1.2rem;
+        grid-column: 1 / -1;
+        margin-bottom: -0.5rem;
+      }
+      .timeline-dot { display: none; }
+      .timeline-details { grid-column: 1 / -1; padding-left: 0; }
+      .party-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem 1rem; }
+      .countdown { gap: 1.5rem; }
+      .hero-names { font-size: clamp(2.5rem, 10vw, 5rem); }
+    }
+
+    @media (max-width: 480px) {
+      .party-grid { grid-template-columns: repeat(2, 1fr); }
+      nav a { font-size: 0.6rem; letter-spacing: 0.1em; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#story">Our Story</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#party">Wedding Party</a>
+    <a href="#faq">FAQ</a>
+    <a href="#rsvp">RSVP</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-names">
+        Kornelia
+        <span class="hero-ampersand">&amp;</span>
+        Cameron
+      </h1>
+      <p class="hero-date">Friday, 23rd October 2026 &nbsp;·&nbsp; Wyresdale Park, Preston</p>
+    </div>
+    <a href="#story" class="hero-scroll" aria-label="Scroll down">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M7 10l5 5 5-5"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <div class="countdown-section">
+    <div class="countdown" id="countdown">
+      <div class="countdown-unit">
+        <span class="countdown-number" id="cd-days">—</span>
+        <span class="countdown-label">Days</span>
+      </div>
+      <div class="countdown-unit">
+        <span class="countdown-number" id="cd-hours">—</span>
+        <span class="countdown-label">Hours</span>
+      </div>
+      <div class="countdown-unit">
+        <span class="countdown-number" id="cd-mins">—</span>
+        <span class="countdown-label">Minutes</span>
+      </div>
+      <div class="countdown-unit">
+        <span class="countdown-number" id="cd-secs">—</span>
+        <span class="countdown-label">Seconds</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOVE STORY -->
+  <section class="love-story" id="story">
+    <div class="section-inner fade-in">
+      <h2 class="section-title">Our Love Story</h2>
+      <div class="divider"></div>
+      <p class="story-text">
+        Kornelia and Cameron met on Tinder in June 2020, thanks in large part to Cameron's dog, Chaos. What started as casual chats quickly became hours-long conversations about dogs, Polish history, and everything in between.
+      </p>
+      <p class="story-text">
+        Cameron is slightly nerdy and into history, D&amp;D, and all things geeky, while Kornelia is down-to-earth, curious about psychology, and happiest surrounded by nature and animals. Somehow, their differences just click.
+      </p>
+      <p class="story-text">
+        They've lived in Wales and the Lake District, now calling Longridge home. Their favourite times are at Rydal or Lytham Beach, usually with the dogs.
+      </p>
+      <p class="story-text">
+        In June 2025, Cameron proposed at a highland cow farm, complete with flowers, prosecco, candles, and a hidden photographer. She said yes with happy tears and laughter, and now they can't wait to celebrate with friends and family.
+      </p>
+      <p class="story-text-pl">
+        W czerwcu 2020 roku zupełnie przypadkowe zdjęcie z psem zapoczątkowało coś wyjątkowego. Kornelia trafiła na profil Camerona na Tinderze, a jego fotografia z Chaosem od razu przykuła jej uwagę. To wystarczyło, żeby dać mu szansę. Chwilę później Cameron odezwał się pierwszy i tak zaczęła się ich historia.
+      </p>
+      <p class="story-text-pl">
+        Z kilku luźnych wiadomości szybko zrobiły się długie, czasem wielogodzinne rozmowy. Najpierw o psach, potem o historii Polski, a w końcu o wszystkim, co tylko przyszło im do głowy.
+      </p>
+      <p class="story-text-pl">
+        Cameron jest miłośnikiem historii, D&amp;D i wszystkiego, co choć trochę geekowe. Kornelia twardo stąpa po ziemi, interesuje się psychologią i najszczęśliwsza jest wtedy, gdy otaczają ją przyroda i zwierzęta. Choć różnią się pod wieloma względami, to właśnie te różnice sprawiają, że tak dobrze się uzupełniają.
+      </p>
+      <p class="story-text-pl">
+        W czerwcu 2025 roku Cameron oświadczył się Kornelii na farmie wśród szkockich krów. Były kwiaty, prosecco, świece i ukryty fotograf, który uchwycił ten moment. Kornelia powiedziała „tak", śmiejąc się i jednocześnie płacząc ze szczęścia.
+      </p>
+      <p class="story-text-pl">
+        Teraz z radością czekają na wspólne świętowanie z rodziną i przyjaciółmi i na wszystkie przygody, które są jeszcze przed nimi.
+      </p>
+
+      <div class="photo-gallery">
+        <div class="photo-gallery-item"><img src="https://bcdn-2738.sayido.app/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oUiyTkK.jpeg?width=600&height=600&fit=crop" alt="Kornelia and Cameron" loading="lazy"></div>
+        <div class="photo-gallery-item"><img src="https://bcdn-2738.sayido.app/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oUiygm8.jpeg?width=600&height=600&fit=crop" alt="Kornelia and Cameron" loading="lazy"></div>
+        <div class="photo-gallery-item"><img src="https://bcdn-2738.sayido.app/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oUiyaQ1.jpeg?width=600&height=600&fit=crop" alt="Kornelia and Cameron" loading="lazy"></div>
+        <div class="photo-gallery-item"><img src="https://bcdn-2738.sayido.app/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oUiyoMd.jpeg?width=600&height=600&fit=crop" alt="Kornelia and Cameron" loading="lazy"></div>
+        <div class="photo-gallery-item"><img src="https://bcdn-2738.sayido.app/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oUiyuye.jpeg?width=600&height=600&fit=crop" alt="Kornelia and Cameron" loading="lazy"></div>
+        <div class="photo-gallery-item"><img src="https://bcdn-2738.sayido.app/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oUizvF8.jpeg?width=600&height=600&fit=crop" alt="Kornelia and Cameron" loading="lazy"></div>
+        <div class="photo-gallery-item"><img src="https://bcdn-2738.sayido.app/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oUj121K.jpeg?width=600&height=600&fit=crop" alt="Kornelia and Cameron" loading="lazy"></div>
+        <div class="photo-gallery-item"><img src="https://bcdn-2738.sayido.app/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oUj1854.jpeg?width=600&height=600&fit=crop" alt="Kornelia and Cameron" loading="lazy"></div>
+        <div class="photo-gallery-item"><img src="https://bcdn-2738.sayido.app/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oUj1Cof.jpeg?width=600&height=600&fit=crop" alt="Kornelia and Cameron" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section class="schedule" id="schedule">
+    <div class="section-inner fade-in">
+      <h2 class="section-title">Order of the Day</h2>
+      <p class="section-subtitle">Harmonogram dnia</p>
+      <div class="divider"></div>
+
+      <div class="timeline">
+        <div class="timeline-day">
+          <span class="timeline-day-label">Friday, 23rd October 2026</span>
+        </div>
+
+        <div class="timeline-event">
+          <div class="timeline-time">13:00</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-details">
+            <div class="timeline-event-title">Guests Arrive</div>
+          </div>
+        </div>
+
+        <div class="timeline-event">
+          <div class="timeline-time">14:00</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-details">
+            <div class="timeline-event-title">Ceremony</div>
+            <div class="timeline-event-title-pl">Ceremonia ślubna w Kościele św. Piotra</div>
+            <div class="timeline-event-desc">Wedding ceremony at St Peter's Church</div>
+            <div class="timeline-address">Snowhill Ln, Scorton, Preston PR3 1AY, UK</div>
+            <a href="https://maps.google.com/?q=Snowhill+Ln+Scorton+Preston+PR3+1AY+UK" target="_blank" class="timeline-directions">Get Directions →</a>
+          </div>
+        </div>
+
+        <div class="timeline-event">
+          <div class="timeline-time">14:00</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-details">
+            <div class="timeline-event-title">Drinks Reception</div>
+            <div class="timeline-event-title-pl">Przyjęcie powitalne</div>
+            <div class="timeline-address">Scorton, Preston PR3 1BT, UK</div>
+            <a href="https://maps.google.com/?q=Scorton+Preston+PR3+1BT+UK" target="_blank" class="timeline-directions">Get Directions →</a>
+          </div>
+        </div>
+
+        <div class="timeline-event">
+          <div class="timeline-time">16:00</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-details">
+            <div class="timeline-event-title">Wedding Breakfast</div>
+            <div class="timeline-event-title-pl">Obiad Weselny</div>
+            <div class="timeline-venue">Wyresdale Park</div>
+            <div class="timeline-address">Snowhill Ln, Scorton, Preston PR3 1AY, UK</div>
+            <a href="https://maps.google.com/?q=Wyresdale+Park+Snowhill+Ln+Scorton+Preston" target="_blank" class="timeline-directions">Get Directions →</a>
+          </div>
+        </div>
+
+        <div class="timeline-event">
+          <div class="timeline-time">19:00 – 01:00</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-details">
+            <div class="timeline-event-title">Party Time 🥳</div>
+            <div class="timeline-event-title-pl">Zabawa Weselna 🥳</div>
+            <div class="timeline-venue">Wyresdale Park</div>
+            <div class="timeline-address">Snowhill Ln, Scorton, Preston PR3 1AY, UK</div>
+            <a href="https://maps.google.com/?q=Wyresdale+Park+Snowhill+Ln+Scorton+Preston" target="_blank" class="timeline-directions">Get Directions →</a>
+          </div>
+        </div>
+
+        <div class="timeline-day">
+          <span class="timeline-day-label">Saturday, 24th October 2026</span>
+        </div>
+
+        <div class="timeline-event">
+          <div class="timeline-time">10:00 – 11:00</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-details">
+            <div class="timeline-event-title">The Day After Breakfast</div>
+            <div class="timeline-event-title-pl">Śniadanie następnego dnia</div>
+            <div class="timeline-event-desc">We are hosting a breakfast for any guests that wish to join us before departing Wyresdale. Please let us know if you wish to attend.</div>
+            <div class="timeline-event-desc" style="font-style: italic; margin-top: 0.5rem;">Wszystkich gości, którzy zostają w Wyresdale, zapraszamy na śniadanie drugiego dnia. Dajcie znać, kto będzie chciał do nas dołączyć.</div>
+            <div class="timeline-address" style="margin-top: 0.5rem;">Scorton, Preston PR3 1BT, UK</div>
+            <div class="timeline-event-desc" style="margin-top: 0.3rem;"><strong>Attire:</strong> Casual</div>
+            <a href="https://maps.google.com/?q=Scorton+Preston+PR3+1BT+UK" target="_blank" class="timeline-directions">Get Directions →</a>
+          </div>
+        </div>
+
+        <div class="timeline-event">
+          <div class="timeline-time">17:00 – 23:00</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-details">
+            <div class="timeline-event-title">The After Party (Polish Style!)</div>
+            <div class="timeline-event-desc">A chance to continue the celebrations informally in the Polish style!</div>
+            <div class="timeline-event-desc" style="margin-top: 0.3rem;"><strong>Attire:</strong> Smart casual wedding vibes</div>
+            <div class="timeline-venue" style="margin-top: 0.5rem;">Bleasdale Parish Hall</div>
+            <div class="timeline-address">School Cottages, Preston PR3 1UY, UK</div>
+            <a href="https://maps.google.com/?q=Bleasdale+Parish+Hall+School+Cottages+Preston+PR3+1UY" target="_blank" class="timeline-directions">Get Directions →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WEDDING PARTY -->
+  <section class="wedding-party" id="party">
+    <div class="section-inner fade-in">
+      <h2 class="section-title">Wedding Party</h2>
+      <p class="section-subtitle">Poznajcie naszych najbliższych</p>
+      <div class="divider"></div>
+
+      <div class="party-grid">
+        <div class="party-member">
+          <img class="party-photo" src="https://bcdn-2738.sayido.app/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oUkRKc4.jpeg?width=250&height=250&fit=crop&face_crop=true" alt="Ania" loading="lazy">
+          <div class="party-name">Ania</div>
+          <div class="party-role">Kornelia's long time best friend and Maid of Honour</div>
+          <div class="party-role-pl">Najlepsza przyjaciółka Kornelii i Świadkowa</div>
+        </div>
+
+        <div class="party-member">
+          <img class="party-photo" src="https://bcdn-2738.sayido.app/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oUkS32F.jpeg?width=250&height=250&fit=crop&face_crop=true" alt="Tomek" loading="lazy">
+          <div class="party-name">Tomek</div>
+          <div class="party-role">Kornelia's long time best friend and one half of the Bridesmen</div>
+          <div class="party-role-pl">Długoletni przyjaciel Kornelii i jeden z drużbów</div>
+        </div>
+
+        <div class="party-member">
+          <img class="party-photo" src="https://bcdn-2738.sayido.app/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oYBPsPt.jpeg?width=250&height=250&fit=crop&face_crop=true" alt="Denis" loading="lazy">
+          <div class="party-name">Denis</div>
+          <div class="party-role">Friend of Kornelia and Tomek's partner, the second half of the Bridesmen</div>
+          <div class="party-role-pl">Przyjaciel Kornelii i partner Tomka, drugi z drużbów</div>
+        </div>
+
+        <div class="party-member">
+          <img class="party-photo" src="https://bcdn-2738.sayido.app/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oUjMWyJ.jpeg?width=250&height=250&fit=crop&face_crop=true" alt="Aneirin" loading="lazy">
+          <div class="party-name">Aneirin</div>
+          <div class="party-role">"Best man" is a claim Aneirin has always made about himself. Now, it's official.</div>
+          <div class="party-role-pl">Świadek pana młodego</div>
+        </div>
+
+        <div class="party-member">
+          <img class="party-photo" src="https://bcdn-2738.sayido.app/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oZUVFBU.jpeg?width=250&height=250&fit=crop&face_crop=true" alt="Owen" loading="lazy">
+          <div class="party-name">Owen</div>
+          <div class="party-role">Usher No. 1</div>
+          <div class="party-role-pl">Drużba pana młodego nr 1</div>
+        </div>
+
+        <div class="party-member">
+          <img class="party-photo" src="https://bcdn-2738.sayido.app/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oUjN35u.jpeg?width=250&height=250&fit=crop&face_crop=true" alt="Joe" loading="lazy">
+          <div class="party-name">Joe</div>
+          <div class="party-role">Usher No. 2</div>
+          <div class="party-role-pl">Drużba pana młodego nr 2</div>
+        </div>
+
+        <div class="party-member">
+          <img class="party-photo" src="https://bcdn-2738.sayido.app/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oUjbnEX.jpeg?width=250&height=250&fit=crop&face_crop=true" alt="Maryla" loading="lazy">
+          <div class="party-name">Maryla</div>
+          <div class="party-role">Mother of the Bride</div>
+          <div class="party-role-pl">Mama Panny Młodej</div>
+        </div>
+
+        <div class="party-member">
+          <img class="party-photo" src="https://bcdn-2738.sayido.app/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oUjdPbz.jpeg?width=250&height=250&fit=crop&face_crop=true" alt="Dawn" loading="lazy">
+          <div class="party-name">Dawn</div>
+          <div class="party-role">Groomsmum and general assistant</div>
+          <div class="party-role-pl">Mama Pana Młodego</div>
+        </div>
+
+        <div class="party-member">
+          <img class="party-photo" src="https://bcdn-2738.sayido.app/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oYBRPVx.jpeg?width=250&height=250&fit=crop&face_crop=true" alt="Iain" loading="lazy">
+          <div class="party-name">Iain</div>
+          <div class="party-role">Father of the Groom. Somewhat bewildered by wedding planning.</div>
+          <div class="party-role-pl">Ojciec pana młodego</div>
+        </div>
+
+        <div class="party-member">
+          <img class="party-photo" src="https://bcdn-2738.sayido.app/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oUkWkSK.jpeg?width=250&height=250&fit=crop&face_crop=true" alt="Catie" loading="lazy">
+          <div class="party-name">Catie</div>
+          <div class="party-role">PA to the Bride (and long suffering sister to the Groom)</div>
+          <div class="party-role-pl">Prywatny asystent Panny Młodej (i cierpliwa siostra Pana Młodego)</div>
+        </div>
+
+        <div class="party-member">
+          <img class="party-photo" src="https://bcdn-2738.sayido.app/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oUkWq62.jpeg?width=250&height=250&fit=crop&face_crop=true" alt="Agata" loading="lazy">
+          <div class="party-name">Agata</div>
+          <div class="party-role">Bride's sister</div>
+          <div class="party-role-pl">Siostra Panny Młodej</div>
+        </div>
+
+        <div class="party-member">
+          <img class="party-photo" src="https://bcdn-2738.sayido.app/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oUjMwRg.jpeg?width=250&height=250&fit=crop&face_crop=true" alt="Bartek" loading="lazy">
+          <div class="party-name">Bartek</div>
+          <div class="party-role">Bride's brother</div>
+          <div class="party-role-pl">Brat Panny Młodej</div>
+        </div>
+
+        <div class="party-member">
+          <img class="party-photo" src="https://bcdn-2738.sayido.app/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oUjg5pZ.jpeg?width=250&height=250&fit=crop&face_crop=true" alt="Michalina" loading="lazy">
+          <div class="party-name">Michalina</div>
+          <div class="party-role">Kornelia's cousin, almost like a sister</div>
+          <div class="party-role-pl">Kuzynka Kornelii, prawie jak siostra</div>
+        </div>
+
+        <div class="party-member">
+          <img class="party-photo" src="https://bcdn-2738.sayido.app/0HoNq4mcHVS3xCtmMwf2MKJ3OYp2/images/1oUkRDTU.jpeg?width=250&height=250&fit=crop&face_crop=true" alt="Rosie" loading="lazy">
+          <div class="party-name">Rosie</div>
+          <div class="party-role">A family friend who has known Cameron since the day he was born and who spreads Irish joy wherever she goes</div>
+          <div class="party-role-pl">Przyjaciółka rodziny, która zna Camerona, odkąd przyszedł na świat</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DRESS CODE -->
+  <section class="dress-code" id="dresscode">
+    <div class="section-inner fade-in">
+      <h2 class="section-title">Dress Code</h2>
+      <div class="divider"></div>
+      <p class="dress-code-text">
+        We kindly request formal attire. The theme of the wedding is <strong>Autumnal Highlands</strong> — kilts and autumnal colours welcome!
+      </p>
+      <p class="dress-code-text-pl">
+        Uprzejmie prosimy o strój formalny. Motyw naszego ślubu to styl Highland — mile widziane kilty, tartan, tweed i jesienne kolory!
+      </p>
+      <div class="dress-icons">
+        <span>🍂</span>
+        <span>🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>
+        <span>🍁</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="section-inner fade-in">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="divider"></div>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <div class="faq-question">When do we need to RSVP by? / Do kiedy należy potwierdzić swoją obecność?</div>
+          <div class="faq-answer">
+            <p>Please submit your RSVP before 28th February.</p>
+            <p>Prosimy o przesłanie RSVP do 28 lutego.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Can we post wedding photos on social media?</div>
+          <div class="faq-answer">
+            <p>Yes! However we ask that you don't post pictures of the bride and groom until they've had the chance to share their pictures.</p>
+            <p>Tak! 😊 Prosimy jednak, żeby nie publikować zdjęć Panny Młodej i Pana Młodego, dopóki sami nie będą mieli okazji podzielić się swoimi zdjęciami.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Carriages (Taxis!)</div>
+          <div class="faq-answer">
+            <p>Wyresdale is in a rural village so taxis will need to be pre-booked before the day. The party finishes at 1am and guests will need to leave by 1:15am.</p>
+            <p>Wyresdale znajduje się w małej miejscowości, więc taksówki trzeba będzie zamówić z wyprzedzeniem. Impreza kończy się o 1 w nocy, a goście powinni wyjechać do 1:15.</p>
+            <p style="font-style: normal; margin-top: 0.75rem;">
+              <strong>A2B Cabs, Garstang:</strong> 01995 915091 / 07495 720830<br>
+              <strong>Garstang Local Cabs:</strong> 01995 511195 / 07437248370<br>
+              <strong>Reddy Travel:</strong> 01995 676160
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Can we bring confetti? / Czy możemy przynieść konfetti?</div>
+          <div class="faq-answer">
+            <p>There's no need! We will provide confetti suitable for that all-important photo shot!</p>
+            <p>Nie martwcie się! Zapewnimy konfetti, które będzie idealne do tego najważniejszego zdjęcia!</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Is there parking on-site? / Czy jest parking na miejscu?</div>
+          <div class="faq-answer">
+            <p>Yes, plenty! Please follow the signs for Wyresdale Weddings to find the dedicated car park. Postcode PR3 1BT.</p>
+            <p>Tak! Prosimy kierować się znakami „Wyresdale Weddings", aby dotrzeć do dedykowanego parkingu. Kod pocztowy: PR3 1BT.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Do you have any other questions?</div>
+          <div class="faq-answer">
+            <p>Please feel free to message Catie on 07775915015 and she will be more than happy to help you out!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCOMMODATION -->
+  <section class="accommodation" id="accommodation">
+    <div class="section-inner fade-in">
+      <h2 class="section-title">Accommodation</h2>
+      <p class="section-subtitle">Zakwaterowanie</p>
+      <div class="divider"></div>
+      <p class="accommodation-text">
+        Please let us know your accommodation requirements, if any, and we will endeavour to provide on-site accommodation or recommend a suitable alternative.
+      </p>
+      <p class="accommodation-text-pl">
+        Jeśli potrzebujecie noclegu, dajcie znać — postaramy się coś zorganizować na miejscu lub polecić odpowiednie hotele w pobliżu.
+      </p>
+    </div>
+  </section>
+
+  <!-- PHOTO SHARE -->
+  <section class="photo-share">
+    <div class="section-inner fade-in">
+      <h2 class="section-title">Share Your Photos</h2>
+      <p class="section-subtitle" style="color: rgba(255,255,255,0.6);">Podziel się z nami swoimi zdjęciami</p>
+      <div class="divider" style="background: rgba(255,255,255,0.3);"></div>
+      <p class="photo-share-text">
+        We would love to create a beautiful collage of memories at our wedding, and we invite you to be a part of it! Feel free to capture special moments at the wedding itself and share them with us — whether it's during the event or in the days that follow. Your snapshots will add even more joy to our celebration.
+      </p>
+      <p class="photo-share-text-pl">
+        Chcielibyśmy stworzyć piękny kolaż wspomnień z naszego wesela i zapraszamy Was do udziału! Uchwyćcie wyjątkowe chwile podczas wesela i podzielcie się nimi z nami — zarówno w trakcie imprezy, jak i po niej. Wasze zdjęcia sprawią, że nasz dzień będzie jeszcze radośniejszy.
+      </p>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section class="rsvp-section" id="rsvp">
+    <div class="section-inner fade-in">
+      <h2 class="section-title">RSVP</h2>
+      <div class="divider"></div>
+      <p class="rsvp-note">Please RSVP by 31st March 2026</p>
+      <p class="rsvp-note-pl" style="margin-bottom: 2rem;">Prosimy o potwierdzenie przybycia (RSVP) do 31 marca 2026 r.</p>
+      <a href="https://sayi.do/korneliaandcameron6966" class="btn btn-solid">RSVP Now</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="names">K &amp; C</div>
+    <p>23 October 2026 &nbsp;·&nbsp; Wyresdale Park, Preston</p>
+  </footer>
+
+  <script>
+    // Nav scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 80);
+    });
+
+    // Countdown
+    function updateCountdown() {
+      const wedding = new Date('2026-10-23T13:00:00+01:00');
+      const now = new Date();
+      const diff = wedding - now;
+      if (diff <= 0) return;
+      const days = Math.floor(diff / 86400000);
+      const hours = Math.floor((diff % 86400000) / 3600000);
+      const mins = Math.floor((diff % 3600000) / 60000);
+      const secs = Math.floor((diff % 60000) / 1000);
+      document.getElementById('cd-days').textContent = days;
+      document.getElementById('cd-hours').textContent = hours;
+      document.getElementById('cd-mins').textContent = mins;
+      document.getElementById('cd-secs').textContent = secs;
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.closest('.faq-item');
+        const wasOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!wasOpen) item.classList.add('open');
+      });
+    });
+
+    // Scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
